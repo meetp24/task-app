@@ -9,7 +9,7 @@ const jwt = require('jsonwebtoken')
 const multer = require('multer')
 
 const app = express()
-const port = process.listenerCount.PORT || 3000
+const port = process.env.PORT
 
 app.use(express.json())
 app.use(userRouter)
